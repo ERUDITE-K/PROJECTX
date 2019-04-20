@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>	WATICO ELECTION</title>
+		<link rel="stylesheet" type="text/css" href="wace.css"/>
+		<link rel="stylesheet" href="{{=URL('static','css/wace.css')}}"/>
+	</head>
+	<body>
+		<h1>WELCOME TO WATICO ELECTION</h1><hr>
+		<form method="post" action="{{=URL('store')}}">
+			<div class="inf">
+				<label for="fsname">FIRSTNAME</label>
+				<input type="text" name="fsname" required="" placeholder="Enter firstname">
+				<label for="lsname"> LASTNAME</label>
+				<input type="text" name="lsname" placeholder="Enter Lastname" required="">
+				<label for="oname">OTHER NAME</label>
+				<input type="text" name="oname" placeholder="Enter Othername">
+			</div>
+			<div>
+				<label>GENDER</label><br>
+				<label><input type="radio" name="gen" required="">MALE</label>
+				<label><input type="radio" name="gen" required="">FEMALE</label>
+			</div><br>
+			<div>
+				<label for="ind">INDEX NUMBER</label>
+				<input type="number" name="ind" min="001" max="999" maxlength="3" required=""> /
+				<input type="number" name="ind" maxlength="4" required="">
+			</div><br>
+			<div>
+				<label>PROGRAMME</label>
+				<select>
+					<option value="Social Science">Social Science</option>
+					<option value="Science">Science</option>
+					<option value="Mathematics">Mathematics</option>
+					<option value="Technical">Technical</option>
+					<option value="ICT">ICT</option>
+				</select><br><br>
+				<label for="email">E-MAIL</label>
+				<input type="email" name="email" required="">
+				<label for="pwd">PASSWORD</label>
+				<input type="password" name="pwd" required="">
+				<label for="cpwd">CONFIRM PASSWORD</label>
+				<input type="password" name="cpwd" required="">
+
+				<button type="submit" value="Registered">REGISTER</button>
+			</div><br>
+			<div>
+				<a href="login.html">I'm eligble</a>
+			</div>
+		</form>
+
+	</body>
+</html>
